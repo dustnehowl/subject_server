@@ -10,3 +10,20 @@ pip install -r requirements.txt
 ```
 uvicorn main:app --reload
 ```
+
+## postman 으로 api 테스트
+서버 실행 후 아래 그림과 같이 post 요청시 메세지를 받을 수 있다.
+
+![postman_test](images/postman_test.png)
+
+```json
+{
+    // 성공시 메세지
+    "message": "파일 업로드 성공"
+}
+
+{
+    // 실패시 메세지
+    "error": "파일 업로드 실패"
+}
+```
