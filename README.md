@@ -9,6 +9,8 @@ pip install -r requirements.txt
 ## 서버 실행
 ```
 uvicorn main:app --reload
+// 모든 호스트 허용, 포트 80번
+uvicorn main:app --host 0.0.0.0 --port 80
 ```
 
 ## postman 으로 api 테스트
